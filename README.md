@@ -1,4 +1,12 @@
 # GitHub state package
+## Why you'd want this
+
+GitHub state at hand: accounts, organizations and repositories cached locally for offline reads, with live identity verification before any write.
+
+- No token ceremony per question — account/org/repo facts are pre-cached with TTL context
+- Writes stay honest: identity and permission are verified live before anything changes
+- Zero credentials in the cache; the connector and the cache are separate faces
+
 
 Cache selected GitHub account, organization, repository and gh environment facts for agents. Read cached context offline; refresh explicitly when current state is needed.
 
